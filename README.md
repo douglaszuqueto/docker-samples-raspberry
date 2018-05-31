@@ -110,6 +110,8 @@ citados e utilizados nesta exploração.
 * [Golang](https://hub.docker.com/r/arm32v6/golang)
 * [JS(NodeJS)](https://hub.docker.com/r/arm32v7/node)
 
+Para ver todas imagens e versões disponíveis, basta acessar os dois primeiros links da referência!
+
 ## Referências
 
 - [Docker Hub - arm32v7](https://hub.docker.com/r/arm32v7/)
