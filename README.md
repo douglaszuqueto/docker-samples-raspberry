@@ -72,10 +72,46 @@ docker run -it --rm --name postgres -e POSTGRES_PASSWORD=root -p 5432:5432 -v po
 docker run -it --rm arm32v6/postgres:11-alpine psql -h 192.168.0.150 -U postgres
 ```
 
-## Exemplos: docker-compose
+## Exemplo: docker-compose
+
+Em um breve resumo: Docker-compose nada mais é que um 'ajudante' que auxilia em
+manter as receitas do bolo de um projeto em específico, tudo isso, pois geralmente
+um projeto tende a ter mais de um serviço: front-end, back-end, cache, servidor web, banco de dados e etc.
+
+Abaixo segue uma receita baseada no primeiro exemplo que foi mencionado servidor web.
+
+**docker-compose.yml**
+```
+version: "3"
+services:
+  app:
+    image: arm32v6/nginx:1.14-alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - ".:/usr/share/nginx/html:ro"
+```
+
+O exemplo tem um formato mais agradável, onde vamos colocando ingrediente a ingrediente, camada a camada, assim formando a arquitetura de um projeto. Num cenário simples apenas colocamos o webserver para rodar na porta 8080.
+
+Lembre-se, o arquivo docker-compose.yml deve estar no mesmo diretório do **index.html** criado no tópico passado.
+
+## Finalizando
+
+Tudo que foi tratato acima, levo como consideração que você já tenha certo conhecimento em Docker. O meu objetivo aqui
+era ir testando serviços e ao mesmo tempo documentando e compartilhando com vocês.
+
+Assim que der, vou explorar as imagens referentes a **linguagens de programação**, as quais, em sua grande maioria são mantidas nos repositórios
+citados e utilizados nesta exploração.
+
+* Python
+* PHP
+* Golang
+* JS(NodeJS)
 
 ## Referências
 
 - [Docker Hub - arm32v7](https://hub.docker.com/r/arm32v7/)
 - [Docker Hub - arm32v6](https://hub.docker.com/r/arm32v6/)
 - [Portainer arm para RPI](https://github.com/douglaszuqueto/portainer-arm)
+- [Documentação do Docker](http://docs.docker.com/)
