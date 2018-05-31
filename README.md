@@ -105,10 +105,10 @@ era ir testando imagens e ao mesmo tempo documentando e compartilhando com você
 Assim que der, vou explorar as imagens referentes a **linguagens de programação**, as quais, em sua grande maioria são mantidas nos repositórios
 citados e utilizados nesta exploração.
 
-* Python
-* PHP
-* Golang
-* JS(NodeJS)
+* [Python](https://hub.docker.com/r/arm32v6/python)
+* [PHP](https://hub.docker.com/r/arm32v6/php/)
+* [Golang](https://hub.docker.com/r/arm32v6/golang)
+* [JS(NodeJS)](https://hub.docker.com/r/arm32v7/node)
 
 ## Referências
 
