@@ -100,7 +100,7 @@ Lembre-se, o arquivo docker-compose.yml deve estar no mesmo diretório do **inde
 ## Finalizando
 
 Tudo que foi tratato acima, levo como consideração que você já tenha certo conhecimento em Docker. O meu objetivo aqui
-era ir testando serviços e ao mesmo tempo documentando e compartilhando com vocês.
+era ir testando imagens e ao mesmo tempo documentando e compartilhando com vocês.
 
 Assim que der, vou explorar as imagens referentes a **linguagens de programação**, as quais, em sua grande maioria são mantidas nos repositórios
 citados e utilizados nesta exploração.
