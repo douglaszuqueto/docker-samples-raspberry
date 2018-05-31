@@ -48,6 +48,11 @@ docker run -it --rm -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock -v
 docker run -it --rm --name redis -p 6379:6379 arm32v7/redis
 ```
 
+**Com persistência**
+```
+docker run -it --rm --name redis -p 6379:6379 -v redis_data:/data arm32v7/redis
+```
+
 **Ping**
 ```
 docker exec -it redis redis-cli ping
@@ -56,6 +61,11 @@ docker exec -it redis redis-cli ping
 #### PostgreSQL
 ```
 docker run -it --rm --name postgres -e POSTGRES_PASSWORD=root -p 5432:5432 arm32v6/postgres:11-alpine
+```
+
+**Com persistência**
+```
+docker run -it --rm --name postgres -e POSTGRES_PASSWORD=root -p 5432:5432 -v postgresql_data:/var/lib/postgresql/data arm32v6/postgres:11-alpine
 ```
 
 ```
