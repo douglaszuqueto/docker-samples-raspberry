@@ -53,7 +53,7 @@ docker run -it --rm --name redis -p 6379:6379 arm32v7/redis
 docker run -it --rm --name redis -p 6379:6379 -v redis_data:/data arm32v7/redis
 ```
 
-**Ping**
+**Teste - Ping**
 ```
 docker exec -it redis redis-cli ping
 ```
@@ -68,6 +68,7 @@ docker run -it --rm --name postgres -e POSTGRES_PASSWORD=root -p 5432:5432 arm32
 docker run -it --rm --name postgres -e POSTGRES_PASSWORD=root -p 5432:5432 -v postgresql_data:/var/lib/postgresql/data arm32v6/postgres:11-alpine
 ```
 
+**Teste - psql**
 ```
 docker run -it --rm arm32v6/postgres:11-alpine psql -h 192.168.0.150 -U postgres
 ```
