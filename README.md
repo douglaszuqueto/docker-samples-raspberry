@@ -16,7 +16,6 @@ docker run -it --rm -p 8080:80 arm32v6/nginx:1.14-alpine
 
 Dentro de determinada pasta, crie um arquivo index.html, depois rode o comando abaixo
 ```html
-```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,6 +28,8 @@ Dentro de determinada pasta, crie um arquivo index.html, depois rode o comando a
     <h1>Docker</h1>
 </body>
 </html>
+```
+
 ```
 docker run -it --rm -p 8080:80 -v $(pwd):/usr/share/nginx/html:ro arm32v6/nginx:1.14-alpine
 ```
